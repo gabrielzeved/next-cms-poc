@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react'
 import type { PropsWithChildren } from 'react'
+import { lazy, Suspense } from 'react'
 
 import Alert from 'src/components/common/Alert'
 import Footer from 'src/components/common/Footer'
@@ -7,6 +7,8 @@ import Navbar from 'src/components/common/Navbar'
 import Toast from 'src/components/common/Toast'
 import RegionalizationBar from 'src/components/regionalization/RegionalizationBar'
 import { useUI } from 'src/sdk/ui/Provider'
+
+import { Playground } from './cms/Playground'
 
 const CartSidebar = lazy(() => import('src/components/cart/CartSidebar'))
 const RegionModal = lazy(
@@ -21,7 +23,7 @@ function Layout({ children }: PropsWithChildren) {
       <Alert icon="Bell" link={{ text: 'Buy now', to: '/office' }} dismissible>
         Get 10% off today:&nbsp;<span>NEW10</span>
       </Alert>
-
+      <Playground tag="Jorge" />
       <Navbar />
 
       <Toast />

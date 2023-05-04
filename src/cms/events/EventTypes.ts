@@ -1,0 +1,11 @@
+export type AppEventType =
+  | 'LOAD_PAGE_WIDGETS'
+  | 'LOAD_PAGE'
+  | 'HOVER_ELEMENT'
+  | 'TAP_ELEMENT'
+  | 'LOAD_ELEMENT'
+  | 'REQUEST_LOCALE'
+  | 'ADD_SLICE'
+  | 'REORDER_SLICE'
+  | 'MOUSE_MOVE'
+  | 'REMOVE_ELEMENT'

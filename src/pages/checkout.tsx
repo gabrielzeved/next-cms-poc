@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import { NextSeo } from 'next-seo'
+import { useEffect } from 'react'
 
 import storeConfig from '../../store.config'
 
